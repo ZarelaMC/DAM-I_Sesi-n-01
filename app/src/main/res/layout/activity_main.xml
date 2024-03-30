@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:id="@+id/main"
+    tools:context=".MainActivity" android:weightSum="13"
+    android:padding="40dp"
+    android:background="@color/fondo">
+
+    <ImageButton
+        android:id="@+id/imgQR"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="4"
+        android:src="@drawable/qr"
+
+        />
+
+    <TextView
+        android:id="@+id/txtMensaje01"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Recibe pagos por QR"
+        android:textAlignment="center"
+        android:layout_weight="1"
+        android:textColor="@color/white"
+        />
+
+    <TextView
+        android:id="@+id/txtMensaje02"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ingresa tu clave Yape"
+        android:textAlignment="center"
+        android:layout_weight="1"
+        android:textColor="@color/white"
+        android:textSize="16dp"
+        />
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="6"
+        android:rowCount="1"
+        android:layout_weight="1">
+
+        <RadioButton android:id="@+id/rbt01" />
+        <RadioButton android:id="@+id/rbt02" />
+        <RadioButton android:id="@+id/rbt03" />
+        <RadioButton android:id="@+id/rbt04" />
+        <RadioButton android:id="@+id/rbt05" />
+        <RadioButton android:id="@+id/rbt06" />
+
+
+    </GridLayout>
+    
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="3"
+        android:rowCount="4"
+        android:layout_weight="6"
+        android:padding="20dp">
+
+        <Button android:id="@+id/btn01" android:text="1"  android:textSize="20dp" android:layout_margin="3dp" />
+        <Button android:id="@+id/btn02" android:text="2"  android:textSize="20dp" android:layout_margin="3dp"/>
+        <Button android:id="@+id/btn03" android:text="3"  android:textSize="20dp" android:layout_margin="3dp"/>
+        <Button android:id="@+id/btn04" android:text="4"  android:textSize="20dp" android:layout_margin="3dp"/>
+        <Button android:id="@+id/btn05" android:text="5" android:textSize="20dp"  android:layout_margin="3dp"/>
+        <Button android:id="@+id/btn06" android:text="6"  android:textSize="20dp" android:layout_margin="3dp" />
+        <Button android:id="@+id/btn07" android:text="7"  android:textSize="20dp" android:layout_margin="3dp"/>
+        <Button android:id="@+id/btn08" android:text="8"  android:textSize="20dp" android:layout_margin="3dp"/>
+        <Button android:id="@+id/btn09" android:text="9"  android:textSize="20dp" android:layout_margin="3dp"/>
+        <TextView android:text="" android:textSize="20dp"  android:layout_margin="3dp"/>
+        <Button android:id="@+id/btn00" android:text="0"  android:textSize="20dp" android:layout_margin="3dp"/>
+        <Button android:id="@+id/btnBorrar" android:text=""  android:textSize="20dp" android:layout_margin="3dp"/>
+
+
+
+    </GridLayout>
+
+    <TextView
+        android:id="@+id/txtMensaje03"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="¿OLVIDASTE TU CLAVE?"
+        android:textAlignment="center"
+        android:textColor="@color/letra"
+        />
+
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>
